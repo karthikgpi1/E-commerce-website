@@ -203,18 +203,18 @@ section{
 
     .swiper-button-next, 
     .swiper-button-prev{
-         height: 5rem;
-         width: 5rem;
-         border-radius: .5rem;
-         background: #fff;
-         box-shadow:$box-shadow;
-         border:$border;
-         color:$black ;
+    height: 5rem;
+    width: 5rem;
+    border-radius: .5rem;
+    background: #fff;
+    box-shadow:$box-shadow;
+    border:$border;
+    color:$black ;
 
-         &:hover{
+       &:hover{
              background: $red;
              color: #fff;
-         }
+        }
     }
 
     .swiper-button-next::after, 
