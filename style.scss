@@ -110,6 +110,11 @@ html{
         box-shadow:$box-shadow;
         border:$border;
 
+        &.active{
+            right: 2rem;
+            transition: .4s linear;
+        }
+
         input{
             height: 100%;
             width: 100%;
