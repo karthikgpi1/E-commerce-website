@@ -224,10 +224,54 @@ section{
 }
 
 
-
-
-  
 // home section ends
+
+
+// banner section starts
+     .banner-container{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1.5rem;
+        padding-top: 5rem;
+        padding-bottom: 5rem;
+
+        .banner{
+            flex:1 1 42rem;
+            overflow: hidden;
+            height: 30rem;
+            position: relative;
+
+            img{
+                height: 100%;
+                width: 100%;
+                object-fit: cover;
+            }
+
+            &:hover img{
+                transform: scale(1.2);
+            }
+
+            .content{
+                position: absolute;
+                top: 50%;
+                right:5rem;
+                transform: translateY(-50%);
+
+                span{
+                    font-size: 2rem;
+                    color: $light-color;
+                }
+
+                h3{
+                    font-size: 3.2rem;
+                    color: $black;
+                    padding-top: .5rem;
+                }
+            }
+        }
+     }
+
+// banner section ends
 
 
 
@@ -333,5 +377,11 @@ section{
         font-size: 50%;
     }
 
-   
+   .banner-container .banner .content{
+    right: 2rem;
+
+    h3{
+        font-size: 2rem;
+    }
+   }
 }
