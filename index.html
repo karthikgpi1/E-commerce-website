@@ -8,6 +8,13 @@
     <!-- <link rel="stylesheet" href="css/style.css" /> -->
     <link type="text/css" rel="stylesheet" href="style.css" />
 
+    <!-- swiper link -->
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+    />
+
     <!-- cdnjs font awesome link  -->
     <link
       rel="stylesheet"
@@ -17,7 +24,7 @@
   <body>
     <!-- header section starts -->
     <header class="header">
-      <a href="#" class="logo"><i class="fas fa-shopping-cart"></i> shop </a>
+      <a href="#" class="logo"><i class="fas fa-shopping-cart"></i> Mk shop </a>
 
       <nav class="navbar">
         <a href="#home">home</a>
@@ -49,10 +56,10 @@
 
     <!-- home section starts -->
     <section class="home" id="#home">
-      <div class="home-slider">
-        <div class="w">
+      <div class="swiper home-slider">
+        <div class="swiper-wrapper">
           <div
-            class="slide"
+            class="swiper-slide slide"
             style="background: url(image/banner1.jpg) no-repeat"
           >
             <div class="content">
@@ -63,7 +70,7 @@
           </div>
 
           <div
-            class="slide"
+            class="swiper-slide slide"
             style="background: url(image/banner2.jpg) no-repeat"
           >
             <div class="content">
@@ -74,7 +81,7 @@
           </div>
 
           <div
-            class="slide"
+            class="swiper-slide slide"
             style="background: url(image/banner3.jpg) no-repeat"
           >
             <div class="content">
@@ -84,9 +91,15 @@
             </div>
           </div>
         </div>
+
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
       </div>
     </section>
     <!-- home section ends -->
+
+    <!-- swiper js link -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
 
     <script src="script.js"></script>
   </body>
