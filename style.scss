@@ -18,8 +18,117 @@ $border:.1rem solid rgba(0,0,0,.3);
 $box-shadow:0 .5rem 1rem rgba(0,0,0,.1);
 
 @mixin grid($value) {
-    display:grid;
-    grid-template-columns: repeat(auto-fit, minmax($value, 1fr));
-    gap:1.5rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax);
+    gap: 1.5rem;
+    
+} 
+
+%text-stroke{
+    color: #fff;
+    cursor: pointer;
+    -webkit-text-stroke: .1rem $black;
+
+    &:hover{
+        -webkit-text-stroke: .1rem $red;
+    }
 }
+
+html{
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+    scroll-padding-top: 7rem;
+    overflow-x: hidden;
+
+    &::-webkit-scrollbar{
+        width: 1rem;
+    }
+
+    &::-webkit-scrollbar-track{
+        background: #fff;
+    }
+
+    &::-webkit-scrollbar-thumb{
+        background: $red;
+    }
+}
+
+.header{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    box-shadow: $box-shadow;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2rem 9%;
+    background: #fff;
+
+
+    .logo{
+        font-size: 2.5rem;
+        color: $black;
+        font-weight: bolder;
+    
+        i{
+            color:$red;
+        }
+    }
+
+
+    .navbar{
+    
+        a{
+            font-size: 1.7rem;
+            color:$light-color;
+            margin:0 1rem;
+
+            &:hover{
+                color:$red;
+            }
+        }     
+            
+    }
+    
+    .icons div, .icons a{
+        font-size: 2.5rem;
+        margin-left: 2rem;
+        @extend %text-stroke;
+   }
+
+   .search-form{
+        position: absolute;
+        top: 115%;
+        right:-105%;
+        width:50rem;
+        height:5.5rem;
+        background: #fff;
+        display: flex;
+        align-items: center;
+        overflow: hidden;
+        box-shadow:$box-shadow;
+        border:$border;
+
+        input{
+            height: 100%;
+            width: 100%;
+            font-size: 1.6rem;
+            text-transform: none;
+            color:$black;
+            padding: 0 1.2rem;
+        }
+
+        label{
+            font-size: 2.2rem;
+            @extend %text-stroke;
+            margin-right: 1.7rem;
+        }
+    }
+        
+}
+   
+#menu-btn{
+    display: none;
+}  
 
