@@ -36,6 +36,10 @@ html::-webkit-scrollbar-thumb {
   background: #eb4d4b;
 }
 
+section {
+  padding: 2rem 9%;
+}
+
 .header {
   position: absolute;
   top: 0;
@@ -109,6 +113,9 @@ html::-webkit-scrollbar-thumb {
   .header {
     padding: 2rem;
   }
+  section {
+    padding: 2rem;
+  }
 }
 @media (max-width: 768px) {
   #menu-btn {
@@ -132,6 +139,14 @@ html::-webkit-scrollbar-thumb {
     font-size: 2rem;
     margin: 2rem;
     display: block;
+  }
+  .header .search-form {
+    width: 100%;
+    top: 100%;
+    border-radius: 0;
+  }
+  .header .search-form.active {
+    right: 0;
   }
 }
 @media (max-width: 450px) {

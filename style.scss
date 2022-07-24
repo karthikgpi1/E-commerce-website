@@ -53,6 +53,11 @@ html{
     }
 }
 
+section{
+    padding: 2rem 9%;
+}
+
+
 .header{
     position: absolute;
     top: 0;
@@ -174,6 +179,9 @@ html{
 
 
 
+
+
+
 //media queries
 
 @media(max-width:991px){
@@ -183,6 +191,10 @@ html{
     }
 
     .header{
+        padding: 2rem;
+    }
+
+    section{
         padding: 2rem;
     }
 }
@@ -210,6 +222,16 @@ html{
             font-size: 2rem;
             margin: 2rem;
             display: block;
+        }
+    }
+
+    .header .search-form{
+        width: 100%;
+        top: 100%;
+        border-radius: 0;
+
+        &.active{
+            right: 0;
         }
     }
    
