@@ -32,6 +32,7 @@ window.onscroll = () =>{
             let dataFilter = button.getAttribute('data-filter');
 
             filterItem.forEach(item =>{
+                
                  item.classList.remove('active');
                  item.classList.add('hide');
 

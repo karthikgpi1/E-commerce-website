@@ -286,6 +286,13 @@ section{
 
 // products section starts
 
+        @keyframes fadeUp {
+             0%{
+                 transform: translateY(5rem);
+                 opacity: 0;
+             }
+         }
+
     .products{
 
         .filter-buttons{
@@ -314,12 +321,21 @@ section{
             justify-content: center;
 
             .box{
-                flex: 1 1 26rem;
+                width:26rem;
                 border-radius: .5rem;
                 overflow: hidden;
                 position: relative;
                 box-shadow: $box-shadow;
                 border: $border;
+
+                &.hide{
+                    display: none;
+                }
+
+                &.active{
+                    animation:fadeUp .4s linear;
+                    // display: block;
+                }
 
 
                 .icons{

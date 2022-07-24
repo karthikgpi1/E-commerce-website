@@ -219,6 +219,19 @@ section {
   padding-top: 0.5rem;
 }
 
+@-webkit-keyframes fadeUp {
+  0% {
+    transform: translateY(5rem);
+    opacity: 0;
+  }
+}
+
+@keyframes fadeUp {
+  0% {
+    transform: translateY(5rem);
+    opacity: 0;
+  }
+}
 .products .filter-buttons {
   display: flex;
   flex-wrap: wrap;
@@ -241,12 +254,19 @@ section {
   justify-content: center;
 }
 .products .box-container .box {
-  flex: 1 1 26rem;
+  width: 26rem;
   border-radius: 0.5rem;
   overflow: hidden;
   position: relative;
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
   border: 0.1rem solid rgba(0, 0, 0, 0.3);
+}
+.products .box-container .box.hide {
+  display: none;
+}
+.products .box-container .box.active {
+  -webkit-animation: fadeUp 0.4s linear;
+          animation: fadeUp 0.4s linear;
 }
 .products .box-container .box .icons {
   display: flex;
