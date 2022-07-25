@@ -11,12 +11,12 @@
   transition: 0.2s linear;
 }
 
-.products .box-container .box .icons a, .header .search-form label, .header .icons div, .header .icons a {
+.featured .featured-slider .slide .icons a, .products .box-container .box .icons a, .header .search-form label, .header .icons div, .header .icons a {
   color: #fff;
   cursor: pointer;
   -webkit-text-stroke: 0.1rem #130f40;
 }
-.products .box-container .box .icons a:hover, .header .search-form label:hover, .header .icons div:hover, .header .icons a:hover {
+.featured .featured-slider .slide .icons a:hover, .products .box-container .box .icons a:hover, .header .search-form label:hover, .header .icons div:hover, .header .icons a:hover {
   -webkit-text-stroke: 0.1rem #eb4d4b;
 }
 
@@ -374,6 +374,91 @@ section {
 .deal .content p {
   color: #666;
   font-size: 1.5rem;
+}
+
+.featured .featured-slider .slide {
+  border-radius: 0.5rem;
+  overflow: hidden;
+  position: relative;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+  border: 0.1rem solid rgba(0, 0, 0, 0.3);
+}
+.featured .featured-slider .slide .icons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(0, 0, 0, 0.7);
+  height: 35rem;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  gap: 0.5rem;
+  transform: scale(0);
+  z-index: 1;
+}
+.featured .featured-slider .slide .icons a {
+  font-size: 2rem;
+  height: 5rem;
+  width: 5rem;
+  line-height: 5rem;
+  text-align: center;
+  background: #fff;
+  border-radius: 0.5rem;
+}
+.featured .featured-slider .slide:hover .icons {
+  transform: scale(1);
+}
+.featured .featured-slider .slide .image {
+  height: 35rem;
+  width: 100%;
+  overflow: hidden;
+}
+.featured .featured-slider .slide .image img {
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.featured .featured-slider .slide:hover .image img {
+  transform: scale(1.1);
+}
+.featured .featured-slider .slide .content {
+  padding: 1rem 1.5rem;
+}
+.featured .featured-slider .slide .content h3 {
+  font-size: 2rem;
+  color: #130f40;
+  font-weight: normal;
+}
+.featured .featured-slider .slide .content .price {
+  padding: 0.5rem 0;
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+}
+.featured .featured-slider .slide .content .price .amount {
+  font-size: 2.2rem;
+  font-weight: bolder;
+  color: #130f40;
+}
+.featured .featured-slider .slide .content .price .cut {
+  font-size: 1.5rem;
+  text-decoration: line-through;
+  color: #666;
+}
+.featured .featured-slider .slide .content .price .offer {
+  font-size: 2rem;
+  color: #eb4d4b;
+}
+.featured .featured-slider .slide .content .stars {
+  font-size: 1.7rem;
+}
+.featured .featured-slider .slide .content .stars i {
+  color: gold;
+}
+.featured .featured-slider .slide .content .stars span {
+  color: #666;
 }
 
 @media (max-width: 991px) {
