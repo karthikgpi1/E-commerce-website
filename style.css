@@ -461,6 +461,46 @@ section {
   color: #666;
 }
 
+.review {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+  background: #f9f9f9;
+}
+.review .slide {
+  border-radius: 0.5rem;
+  background: #fff;
+  border: 0.1rem solid rgba(0, 0, 0, 0.3);
+  padding: 2rem;
+  text-align: center;
+}
+.review .slide p {
+  font-size: 1.4rem;
+  color: #666;
+  line-height: 2;
+}
+.review .slide .user {
+  padding-top: 2rem;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  justify-content: center;
+}
+.review .slide .user img {
+  height: 7rem;
+  width: 7rem;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 50%;
+}
+.review .slide .user h3 {
+  font-size: 2.2rem;
+  color: #130f40;
+}
+.review .slide .user span {
+  font-size: 1.5rem;
+  color: #eb4d4b;
+}
+
 @media (max-width: 991px) {
   html {
     font-size: 55%;
