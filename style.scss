@@ -436,6 +436,46 @@ section{
 // products section ends
 
 
+//deal section starts
+    .deal{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 2rem;
+        align-items: center;
+        background: linear-gradient(#fff 20%, $light-bg 20.1%);
+
+        .image{
+            flex:1 1 42rem;
+
+            img{
+                width: 40rem;
+            }
+        }
+
+        .content{
+            flex:1 1 42rem;
+
+            span{
+                color: $red;
+                font-size: 1.7rem;
+                
+            }
+
+            h3{
+                color: $black;
+                font-size: 3rem;
+                padding: 0.5rem 0;
+            }
+
+            p{
+                color: $light-color;
+                font-size: 1.5rem;
+            }
+        }
+    }
+//deal section ends
+
+
 
 
 
@@ -553,5 +593,14 @@ section{
 
    .products .box-container .box{
     width: 100%;
+   }
+
+   .deal .image img{
+    width: 100%;
+   }
+
+   .deal .content{
+    padding-top: 2rem;
+    text-align: center;
    }
 }

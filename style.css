@@ -346,6 +346,36 @@ section {
   color: #666;
 }
 
+.deal {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  align-items: center;
+  background: linear-gradient(#fff 20%, #f9f9f9 20.1%);
+}
+.deal .image {
+  flex: 1 1 42rem;
+}
+.deal .image img {
+  width: 40rem;
+}
+.deal .content {
+  flex: 1 1 42rem;
+}
+.deal .content span {
+  color: #eb4d4b;
+  font-size: 1.7rem;
+}
+.deal .content h3 {
+  color: #130f40;
+  font-size: 3rem;
+  padding: 0.5rem 0;
+}
+.deal .content p {
+  color: #666;
+  font-size: 1.5rem;
+}
+
 @media (max-width: 991px) {
   html {
     font-size: 55%;
@@ -404,5 +434,12 @@ section {
   }
   .products .box-container .box {
     width: 100%;
+  }
+  .deal .image img {
+    width: 100%;
+  }
+  .deal .content {
+    padding-top: 2rem;
+    text-align: center;
   }
 }/*# sourceMappingURL=style.css.map */
