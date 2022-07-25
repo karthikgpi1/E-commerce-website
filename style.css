@@ -472,6 +472,7 @@ section {
   border: 0.1rem solid rgba(0, 0, 0, 0.3);
   padding: 2rem;
   text-align: center;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
 }
 .review .slide p {
   font-size: 1.4rem;
