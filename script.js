@@ -138,6 +138,42 @@ var swiper = new Swiper(".review-slide", {
         },
       },
   });
+// reviews section ends
 
-  // reviews section ends
+// blogs swiper section starts
+      
+var swiper = new Swiper(".blogs-slider", {
+    
+  // spaceBetween: 30,
+  centeredSlides: true,
+  loop:true,
+  spaceBetween:20,
+
+  autoplay: {
+      delay: 3000,
+      disableOnInteraction: false,
+  },
+
+  // navigation: {
+  //   nextEl: ".swiper-button-next",
+  //   prevEl: ".swiper-button-prev",
+  // },
+
+  breakpoints: {
+      0: {
+        slidesPerView: 1,
+      //   spaceBetween: 20,
+      },
+      768: {
+        slidesPerView: 2,
+      //   spaceBetween: 50,
+      },
+      1200: {
+        slidesPerView: 3,
+      //   spaceBetween: 50,
+      },
+    },
+});
+
+// blogs swiper section ends
 
