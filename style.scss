@@ -19,7 +19,7 @@ $box-shadow:0 .5rem 1rem rgba(0,0,0,.1);
 
 @mixin grid($value) {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax);
+    grid-template-columns: repeat(auto-fit, minmax($value,1fr));
     gap: 1.5rem;
     
 } 
@@ -646,9 +646,12 @@ section{
 
     .icons-container{
         
-        display:grid;
-        grid-template-columns: 1fr 1fr 1fr;
-        gap: 2rem;
+        // display:grid;
+        // grid-template-columns: 1fr 1fr 1fr;
+        // gap: 2rem;
+        @include grid(25rem);
+
+
         
         
 
@@ -763,6 +766,7 @@ section{
             box-shadow: $box-shadow;
             overflow: hidden;
             
+        
             
             
     

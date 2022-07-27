@@ -505,8 +505,8 @@ section {
 
 .contact .icons-container {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  gap: 2rem;
+  grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+  gap: 1.5rem;
 }
 .contact .icons-container .icons {
   padding: 2rem;
