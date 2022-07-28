@@ -635,6 +635,72 @@ section {
   color: #eb4d4b;
 }
 
+.footer {
+  background: #f9f9f9;
+}
+.footer .box-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+  gap: 1.5rem;
+}
+.footer .box-container .box h3 {
+  font-size: 2.2rem;
+  color: #130f40;
+  padding: 1rem 0;
+}
+.footer .box-container .box p {
+  font-size: 1.4rem;
+  color: #666;
+  padding: 1rem 0;
+  line-height: 2;
+}
+.footer .box-container .box a {
+  display: block;
+  font-size: 1.4rem;
+  color: #666;
+  padding: 1rem 0;
+}
+.footer .box-container .box a i {
+  padding-right: 0.5rem;
+  color: #eb4d4b;
+}
+.footer .box-container .box a:hover {
+  color: #eb4d4b;
+}
+.footer .box-container .box a:hover i {
+  padding-right: 2rem;
+}
+.footer .share {
+  padding-top: 2rem;
+  text-align: center;
+}
+.footer .share a {
+  font-size: 2rem;
+  height: 5rem;
+  width: 5rem;
+  line-height: 5rem;
+  border-radius: 50%;
+  background: #130f40;
+  color: #fff;
+  margin: 0.3rem;
+}
+.footer .share a:hover {
+  background: #eb4d4b;
+  transform: rotate(360deg);
+}
+.footer .credit {
+  margin-top: 2.5rem;
+  padding: 1rem;
+  padding-top: 2rem;
+  border-top: 0.1rem solid rgba(0, 0, 0, 0.3);
+  text-align: center;
+  color: #666;
+  font-size: 2rem;
+}
+.footer .credit span {
+  color: #eb4d4b;
+}
+
 @media (max-width: 991px) {
   html {
     font-size: 55%;
@@ -676,9 +742,6 @@ section {
   }
   .home .home-slider .slide {
     padding-left: 2rem;
-  }
-  .contact .icons-container {
-    grid-template-columns: 1fr;
   }
 }
 @media (max-width: 450px) {
